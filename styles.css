@@ -7,3 +7,97 @@
    TODO 6: main (centrerat, max-bredd)
    TODO 7: .knapp
 */
+/* Padding och border räknas in i elementets bredd och höjd. */
+*,
+*:before,
+*:after {
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #fffaf3;
+   margin: 0;
+   color: #322222;
+}
+
+h1,
+h2,
+h3 {
+   color: #3b2418;
+}
+
+header h1,
+header h2,
+header h3 {
+   color: white;
+}
+
+
+header {
+   background-color: #5b3a29;
+   color: white;
+   padding: 16px 24px;
+}
+
+footer {
+   background-color: #2b1c14;
+   color: white; 
+   padding: 16px 24px;
+}
+
+header a,
+footer a {
+   color: white;
+}
+
+nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+article {
+   background-color: #ffffff;
+   border: 1px solid #e3d5c3;
+   border-radius: 8px;
+   padding: 16px;
+   margin-bottom: 16px;
+}
+article img {
+   max-width: 100%;
+   height: auto;
+}
+/* Centrerar main med lika mycket utrymme till vänster och höger. */
+main {
+   max-width: 1100px;
+   margin: 0 auto;
+   padding: 24px;
+}
+
+.knapp {
+   display: inline-block;
+   background-color: #8c1010;
+   color: white;
+   padding: 12px 20px;
+   border-radius: 6px;
+   text-decoration: none; 
+}
+.knapp:hover {
+   background-color: #6f0c0c;
+}
+
+a,
+.pris {
+   color: #8c1010;
+}
+
+#hero {
+   background-color: #f3e3cf;
+}
+/*
+Boxmodellen för article, utifrån och in:
+1. Margin: 16px under kortet.
+2. Border: 1px runt kortet.
+3. Padding: 16px mellan kanten och innehållet.
+4. Content: text och bild.
+*/
